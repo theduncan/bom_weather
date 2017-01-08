@@ -43,8 +43,9 @@ def insert_region (db, PID, aac, parent_aac, Local_Start, Local_End, UTC_Start, 
             db.rollback()
 def insert_location (db, PID, aac, parent_aac, Local_Start, Local_End, UTC_Start, UTC_End, icon, min, max, range, precis, pop):
     cursor = db.cursor()
-    sql_head = """ INSERT INTO `Forecast_location` (`PID`, `aac`, `parent-aac`, `Local_Start`, `Local_End`, `UTC_Start`, `UTC_End`, `Icon`, `Min`, `Max`, `precipitation_range`, `precis`, `probability_of_precipitation`, `DateTime_Modified`) VALUES   """
-    sql_body = "('%s', '%s', '%s', '%s', '%s', '%s', '%s', %d, %d, %d, %s, %s, %s, now())" % (PID, aac, parent_aac, Local_Start, Local_End, UTC_Start, UTC_End, icon, min, max, range, precis, pop)
+    # `precipitation_range`, `precis`, `probability_of_precipitation`,  , range, precis, pop
+    sql_head = """ INSERT INTO `Forecast_location` (`PID`, `aac`, `parent-aac`, `Local_Start`, `Local_End`, `UTC_Start`, `UTC_End`, `Icon`, `Min`, `Max`,  `DateTime_Modified`) VALUES   """
+    sql_body = "('%s', '%s', '%s', '%s', '%s', '%s', '%s', %d, %d, %d, %s, %s, %s, now())" % (PID, aac, parent_aac, Local_Start, Local_End, UTC_Start, UTC_End, icon, min, max)
     try:
         # Execute the SQL command
         sql = sql_head + '' + sql_body

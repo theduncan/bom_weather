@@ -106,20 +106,3 @@ for s in itemlist:
                 if (e.attributes['type'].value == 'probability_of_precipitation'):
                     probability_of_precipitation = e.firstChild.data
                     print 'probability_of_precipitation: ' + probability_of_precipitation  
-
-                    
-
-                    
-                    
-
-
-
-
-<forecast-period index="2" start-time-local="2017-01-09T00:00:00+11:00" end-time-local="2017-01-10T00:00:00+11:00" start-time-utc="2017-01-08T13:00:00Z" end-time-utc="2017-01-09T13:00:00Z">
-    <element type="forecast_icon_code">3</element>
-    <element type="precipitation_range">0 mm</element>
-    <element type="air_temperature_minimum" units="Celsius">17</element>
-    <element type="air_temperature_maximum" units="Celsius">25</element>
-    <text type="precis">Partly cloudy.</text>
-    <text type="probability_of_precipitation">20%</text>
-</forecast-period>

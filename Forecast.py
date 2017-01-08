@@ -93,12 +93,12 @@ for s in itemlist:
         aac = s.attributes['aac'].value
         forcastlist = s.getElementsByTagName('forecast-period')
         for f in forcastlist:
-            precipitation_range = ''
+            precipitation_range = ' '
             icon = '0'
             temp_min = '00'
             temp_max = '00'
-            precis = ''
-            probability_of_precipitation = ''
+            precis = ' '
+            probability_of_precipitation = ' '
             Local_Start =  str(f.attributes['start-time-local'].value)
             Local_End =  str(f.attributes['end-time-local'].value)
             UTC_Start =  str(f.attributes['start-time-utc'].value)

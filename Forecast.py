@@ -124,4 +124,4 @@ for s in itemlist:
                     probability_of_precipitation = e.firstChild.data
                     print 'probability_of_precipitation: ' + probability_of_precipitation  
             if (temp_min != '00'):
-                insert_location (db, PID, aac, parent_aac, Local_Start, Local_End, UTC_Start, UTC_End, icon, temp_min, temp_max, precipitation_range, precis, probability_of_precipitation)
+                insert_location (db, PID, aac, parent_aac, Local_Start, Local_End, UTC_Start, UTC_End, int(icon), int(temp_min), int(temp_max), precipitation_range, precis, probability_of_precipitation)

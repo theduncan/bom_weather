@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="1.7" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.bom.gov.au/schema/v1.7/product.xsd">
+    <amoc>
+        <source>
+            <sender>Australian Government Bureau of Meteorology</sender>
+            <region>Victoria</region>
+            <office>VICRO</office>
+            <copyright>http://www.bom.gov.au/other/copyright.shtml</copyright>
+            <disclaimer>http://www.bom.gov.au/other/disclaimer.shtml</disclaimer>
+        </source>
+        <identifier>IDV10450</identifier>
+        <issue-time-utc>2017-01-07T05:20:00Z</issue-time-utc>
+        <issue-time-local tz="EDT">2017-01-07T16:20:00+11:00</issue-time-local>
+        <sent-time>2017-01-07T05:20:11Z</sent-time>
+        <expiry-time>2017-01-08T05:20:00Z</expiry-time>
+        <validity-bgn-time-local tz="EDT">2017-01-07T16:20:10+11:00</validity-bgn-time-local>
+        <validity-end-time-local tz="EDT">2017-01-14T23:59:59+11:00</validity-end-time-local>
+        <next-routine-issue-time-utc>2017-01-07T18:05:00Z</next-routine-issue-time-utc>
+        <next-routine-issue-time-local tz="EDT">2017-01-08T05:05:00+11:00</next-routine-issue-time-local>
+        <status>O</status>
+        <service>WSP</service>
+        <sub-service>FCT</sub-service>
+        <product-type>F</product-type>
+        <phase>NEW</phase>
+    </amoc>
+    <forecast>
+        <area aac="VIC_FA001" description="Victoria" type="region">
+            <forecast-period start-time-local="2017-01-07T16:20:10+11:00" end-time-local="2017-01-07T16:20:10+11:00" start-time-utc="2017-01-07T05:20:10Z" end-time-utc="2017-01-07T05:20:10Z">
+                <text type="warning_summary_footer">Details of warnings are available on the Bureau's website www.bom.gov.au, by telephone 1300-659-217* or through some TV and radio broadcasts.</text>
+                <text type="product_footer">* Calls to 1300 numbers cost around 27.5c incl. GST, higher from mobiles or public phones.</text>
+            </forecast-period>
+        </area>
+        <area aac="VIC_ME001" description="Melbourne" type="metropolitan" parent-aac="VIC_FA001">
+            <forecast-period index="0" start-time-local="2017-01-07T17:00:00+11:00" end-time-local="2017-01-08T00:00:00+11:00" start-time-utc="2017-01-07T06:00:00Z" end-time-utc="2017-01-07T13:00:00Z">
+                <text type="forecast">An oppressive night. Winds northerly 10 to 20 km/h.</text>
+            </forecast-period>
+            <forecast-period index="1" start-time-local="2017-01-08T00:00:00+11:00" end-time-local="2017-01-09T00:00:00+11:00" start-time-utc="2017-01-07T13:00:00Z" end-time-utc="2017-01-08T13:00:00Z">
+                <text type="forecast">Slight (30%) chance of a thundery shower in the morning. Mostly sunny afternoon. Winds northerly 15 to 25 km/h increasing to 25 to 35 km/h early in the morning then shifting milder southerly 25 to 35 km/h around midday.</text>
+                <text type="fire_danger">High</text>
+                <text type="uv_alert">Sun protection 9:10am to 5:50pm, UV Index predicted to reach 14 [Extreme]</text>
+            </forecast-period>
+            <forecast-period index="2" start-time-local="2017-01-09T00:00:00+11:00" end-time-local="2017-01-10T00:00:00+11:00" start-time-utc="2017-01-08T13:00:00Z" end-time-utc="2017-01-09T13:00:00Z">
+                <text type="forecast">Partly cloudy. Slight (20%) chance of a shower or thunderstorm about the nearby hills in the afternoon and evening. Light winds.</text>
+            </forecast-period>
+            <forecast-period index="3" start-time-local="2017-01-10T00:00:00+11:00" end-time-local="2017-01-11T00:00:00+11:00" start-time-utc="2017-01-09T13:00:00Z" end-time-utc="2017-01-10T13:00:00Z">
+                <text type="forecast">Patchy morning fog. Mostly sunny day. Light winds becoming southerly 20 to 30 km/h during the afternoon then becoming light during the evening.</text>
+            </forecast-period>
+            <forecast-period index="4" start-time-local="2017-01-11T00:00:00+11:00" end-time-local="2017-01-12T00:00:00+11:00" start-time-utc="2017-01-10T13:00:00Z" end-time-utc="2017-01-11T13:00:00Z">
+                <text type="forecast">Partly cloudy. Slight (20%) chance of a shower, most likely during the morning and early afternoon. Winds southwesterly 20 to 30 km/h turning southerly during the afternoon.</text>
+            </forecast-period>
+            <forecast-period index="5" start-time-local="2017-01-12T00:00:00+11:00" end-time-local="2017-01-13T00:00:00+11:00" start-time-utc="2017-01-11T13:00:00Z" end-time-utc="2017-01-12T13:00:00Z">
+                <text type="forecast">Morning cloud then sunny. Light winds becoming south to southeasterly 15 to 20 km/h during the morning.</text>
+            </forecast-period>
+            <forecast-period index="6" start-time-local="2017-01-13T00:00:00+11:00" end-time-local="2017-01-14T00:00:00+11:00" start-time-utc="2017-01-12T13:00:00Z" end-time-utc="2017-01-13T13:00:00Z">
+                <text type="forecast">Cloudy. Medium (60%) chance of showers. Winds northerly 25 to 35 km/h shifting southwesterly 15 to 25 km/h during the day.</text>
+            </forecast-period>
+            <forecast-period index="7" start-time-local="2017-01-14T00:00:00+11:00" end-time-local="2017-01-15T00:00:00+11:00" start-time-utc="2017-01-13T13:00:00Z" end-time-utc="2017-01-14T13:00:00Z">
+                <text type="forecast">Mostly cloudy. Slight (30%) chance of a shower, most likely during the morning. Winds south to southwesterly 15 to 25 km/h increasing to 30 km/h before tending south to southeasterly 15 to 20 km/h during the day.</text>
+            </forecast-period>
+        </area>
+        <area aac="VIC_PT042" description="Melbourne" type="location" parent-aac="VIC_ME001">
+            <forecast-period index="0" start-time-local="2017-01-07T17:00:00+11:00" end-time-local="2017-01-08T00:00:00+11:00" start-time-utc="2017-01-07T06:00:00Z" end-time-utc="2017-01-07T13:00:00Z">
+                <element type="forecast_icon_code">3</element>
+                <text type="precis">An oppressive night.</text>
+                <text type="probability_of_precipitation">0%</text>
+            </forecast-period>
+            <forecast-period index="1" start-time-local="2017-01-08T00:00:00+11:00" end-time-local="2017-01-09T00:00:00+11:00" start-time-utc="2017-01-07T13:00:00Z" end-time-utc="2017-01-08T13:00:00Z">
+                <element type="forecast_icon_code">17</element>
+                <element type="precipitation_range">0 to 0.4 mm</element>
+                <element type="air_temperature_minimum" units="Celsius">28</element>
+                <element type="air_temperature_maximum" units="Celsius">34</element>
+                <text type="precis">Possible shower. Midday change.</text>
+                <text type="probability_of_precipitation">30%</text>
+            </forecast-period>
+            <forecast-period index="2" start-time-local="2017-01-09T00:00:00+11:00" end-time-local="2017-01-10T00:00:00+11:00" start-time-utc="2017-01-08T13:00:00Z" end-time-utc="2017-01-09T13:00:00Z">
+                <element type="forecast_icon_code">3</element>
+                <element type="precipitation_range">0 mm</element>
+                <element type="air_temperature_minimum" units="Celsius">17</element>
+                <element type="air_temperature_maximum" units="Celsius">25</element>
+                <text type="precis">Partly cloudy.</text>
+                <text type="probability_of_precipitation">20%</text>
+            </forecast-period>
+            <forecast-period index="3" start-time-local="2017-01-10T00:00:00+11:00" end-time-local="2017-01-11T00:00:00+11:00" start-time-utc="2017-01-09T13:00:00Z" end-time-utc="2017-01-10T13:00:00Z">
+                <element type="forecast_icon_code">3</element>
+                <element type="precipitation_range">0 mm</element>
+                <element type="air_temperature_minimum" units="Celsius">14</element>
+                <element type="air_temperature_maximum" units="Celsius">28</element>
+                <text type="precis">Mostly sunny.</text>
+                <text type="probability_of_precipitation">10%</text>
+            </forecast-period>
+            <forecast-period index="4" start-time-local="2017-01-11T00:00:00+11:00" end-time-local="2017-01-12T00:00:00+11:00" start-time-utc="2017-01-10T13:00:00Z" end-time-utc="2017-01-11T13:00:00Z">
+                <element type="forecast_icon_code">3</element>
+                <element type="precipitation_range">0 mm</element>
+                <element type="air_temperature_minimum" units="Celsius">15</element>
+                <element type="air_temperature_maximum" units="Celsius">23</element>
+                <text type="precis">Partly cloudy.</text>
+                <text type="probability_of_precipitation">20%</text>
+            </forecast-period>
+            <forecast-period index="5" start-time-local="2017-01-12T00:00:00+11:00" end-time-local="2017-01-13T00:00:00+11:00" start-time-utc="2017-01-11T13:00:00Z" end-time-utc="2017-01-12T13:00:00Z">
+                <element type="forecast_icon_code">3</element>
+                <element type="precipitation_range">0 mm</element>
+                <element type="air_temperature_minimum" units="Celsius">14</element>
+                <element type="air_temperature_maximum" units="Celsius">27</element>
+                <text type="precis">Becoming sunny.</text>
+                <text type="probability_of_precipitation">10%</text>
+            </forecast-period>
+            <forecast-period index="6" start-time-local="2017-01-13T00:00:00+11:00" end-time-local="2017-01-14T00:00:00+11:00" start-time-utc="2017-01-12T13:00:00Z" end-time-utc="2017-01-13T13:00:00Z">
+                <element type="forecast_icon_code">11</element>
+                <element type="precipitation_range">1 to 4 mm</element>
+                <element type="air_temperature_minimum" units="Celsius">18</element>
+                <element type="air_temperature_maximum" units="Celsius">30</element>
+                <text type="precis">Showers developing.</text>
+                <text type="probability_of_precipitation">60%</text>
+            </forecast-period>
+            <forecast-period index="7" start-time-local="2017-01-14T00:00:00+11:00" end-time-local="2017-01-15T00:00:00+11:00" start-time-utc="2017-01-13T13:00:00Z" end-time-utc="2017-01-14T13:00:00Z">
+                <element type="forecast_icon_code">17</element>
+                <element type="precipitation_range">0 to 0.2 mm</element>
+                <element type="air_temperature_minimum" units="Celsius">16</element>
+                <element type="air_temperature_maximum" units="Celsius">22</element>
+                <text type="precis">Possible shower.</text>
+                <text type="probability_of_precipitation">30%</text>
+            </forecast-period>
+        </area>
+        <area aac="VIC_PT025" description="Geelong" type="location" parent-aac="VIC_ME001">
+            <forecast-period index="1" start-time-local="2017-01-08T00:00:00+11:00" end-time-local="2017-01-09T00:00:00+11:00" start-time-utc="2017-01-07T13:00:00Z" end-time-utc="2017-01-08T13:00:00Z">
+                <element type="air_temperature_minimum" units="Celsius">24</element>
+                <element type="air_temperature_maximum" units="Celsius">30</element>
+            </forecast-period>
+        </area>
+        <area aac="VIC_PT037" description="Laverton" type="location" parent-aac="VIC_ME001">
+            <forecast-period index="1" start-time-local="2017-01-08T00:00:00+11:00" end-time-local="2017-01-09T00:00:00+11:00" start-time-utc="2017-01-07T13:00:00Z" end-time-utc="2017-01-08T13:00:00Z">
+                <element type="air_temperature_minimum" units="Celsius">26</element>
+                <element type="air_temperature_maximum" units="Celsius">35</element>
+            </forecast-period>
+        </area>
+        <area aac="VIC_PT073" description="Tullamarine" type="location" parent-aac="VIC_ME001">
+            <forecast-period index="1" start-time-local="2017-01-08T00:00:00+11:00" end-time-local="2017-01-09T00:00:00+11:00" start-time-utc="2017-01-07T13:00:00Z" end-time-utc="2017-01-08T13:00:00Z">
+                <element type="air_temperature_minimum" units="Celsius">26</element>
+                <element type="air_temperature_maximum" units="Celsius">35</element>
+            </forecast-period>
+        </area>
+        <area aac="VIC_PT065" description="Scoresby" type="location" parent-aac="VIC_ME001">
+            <forecast-period index="1" start-time-local="2017-01-08T00:00:00+11:00" end-time-local="2017-01-09T00:00:00+11:00" start-time-utc="2017-01-07T13:00:00Z" end-time-utc="2017-01-08T13:00:00Z">
+                <element type="air_temperature_minimum" units="Celsius">26</element>
+                <element type="air_temperature_maximum" units="Celsius">33</element>
+            </forecast-period>
+        </area>
+        <area aac="VIC_PT078" description="Watsonia" type="location" parent-aac="VIC_ME001">
+            <forecast-period index="1" start-time-local="2017-01-08T00:00:00+11:00" end-time-local="2017-01-09T00:00:00+11:00" start-time-utc="2017-01-07T13:00:00Z" end-time-utc="2017-01-08T13:00:00Z">
+                <element type="air_temperature_minimum" units="Celsius">26</element>
+                <element type="air_temperature_maximum" units="Celsius">35</element>
+            </forecast-period>
+        </area>
+        <area aac="VIC_PT047" description="Mount Dandenong" type="location" parent-aac="VIC_ME001">
+            <forecast-period index="1" start-time-local="2017-01-08T00:00:00+11:00" end-time-local="2017-01-09T00:00:00+11:00" start-time-utc="2017-01-07T13:00:00Z" end-time-utc="2017-01-08T13:00:00Z">
+                <element type="air_temperature_minimum" units="Celsius">22</element>
+                <element type="air_temperature_maximum" units="Celsius">30</element>
+            </forecast-period>
+        </area>
+        <area aac="VIC_PT082" description="Yarra Glen" type="location" parent-aac="VIC_ME001">
+            <forecast-period index="1" start-time-local="2017-01-08T00:00:00+11:00" end-time-local="2017-01-09T00:00:00+11:00" start-time-utc="2017-01-07T13:00:00Z" end-time-utc="2017-01-08T13:00:00Z">
+                <element type="air_temperature_minimum" units="Celsius">25</element>
+                <element type="air_temperature_maximum" units="Celsius">35</element>
+            </forecast-period>
+        </area>
+        <area aac="VIC_PT023" description="Frankston" type="location" parent-aac="VIC_ME001">
+            <forecast-period index="1" start-time-local="2017-01-08T00:00:00+11:00" end-time-local="2017-01-09T00:00:00+11:00" start-time-utc="2017-01-07T13:00:00Z" end-time-utc="2017-01-08T13:00:00Z">
+                <element type="air_temperature_minimum" units="Celsius">24</element>
+                <element type="air_temperature_maximum" units="Celsius">29</element>
+            </forecast-period>
+        </area>
+    </forecast>
+</product>

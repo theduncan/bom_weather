@@ -78,6 +78,14 @@ for s in itemlist:
         for f in forcastlist:
             precipitation_range = ''
             icon = '0'
+            temp_min = '00'
+            temp_max = '00'
+            precis = ''
+            probability_of_precipitation = ''
+            Local_Start =  str(f.attributes['start-time-local'].value)
+            Local_End =  str(f.attributes['end-time-local'].value)
+            UTC_Start =  str(f.attributes['start-time-utc'].value)
+            UTC_End = str(f.attributes['end-time-utc'].value)
             elist = f.getElementsByTagName('element')
             for e in elist:
                 if (e.attributes['type'].value == 'forecast_icon_code'):
@@ -86,6 +94,32 @@ for s in itemlist:
                 if (e.attributes['type'].value == 'precipitation_range'):
                     precipitation_range = e.firstChild.data
                     print 'precipitation_range: ' + precipitation_range
+                if (e.attributes['type'].value == 'air_temperature_minimum'):
+                    temp_min = e.firstChild.data
+                    print 'temp_min: ' + temp_min
+                if (e.attributes['type'].value == 'air_temperature_maximum'):
+                    temp_max = e.firstChild.data
+                    print 'temp_max: ' + temp_max
+                if (e.attributes['type'].value == 'precis'):
+                    precis = e.firstChild.data
+                    print 'precis: ' + precis                
+                if (e.attributes['type'].value == 'probability_of_precipitation'):
+                    probability_of_precipitation = e.firstChild.data
+                    print 'probability_of_precipitation: ' + probability_of_precipitation  
+
+                    
+
+                    
+                    
 
 
 
+
+<forecast-period index="2" start-time-local="2017-01-09T00:00:00+11:00" end-time-local="2017-01-10T00:00:00+11:00" start-time-utc="2017-01-08T13:00:00Z" end-time-utc="2017-01-09T13:00:00Z">
+    <element type="forecast_icon_code">3</element>
+    <element type="precipitation_range">0 mm</element>
+    <element type="air_temperature_minimum" units="Celsius">17</element>
+    <element type="air_temperature_maximum" units="Celsius">25</element>
+    <text type="precis">Partly cloudy.</text>
+    <text type="probability_of_precipitation">20%</text>
+</forecast-period>

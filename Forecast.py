@@ -62,7 +62,7 @@ for s in itemlist:
         forcastlist = s.getElementsByTagName('forecast-period') 
         for f in forcastlist:
             Local_Start =  str(f.attributes['start-time-local'].value)
-	    Local_End =  str(f.attributes['end-time-local'].value)
+            Local_End =  str(f.attributes['end-time-local'].value)
             UTC_Start =  str(f.attributes['start-time-utc'].value)
             UTC_End = str(f.attributes['end-time-utc'].value)
             textlist = f.getElementsByTagName('text')
@@ -74,6 +74,20 @@ for s in itemlist:
                 if (str(t.attributes['type'].firstChild.data) == 'uv_alert' ):
                     UV_alert =  t.firstChild.data
             insert_region(db, PID, aac, parent_aac, Local_Start, Local_End, UTC_Start, UTC_End, Forecast_Description, Fire_Danger, UV_Alert)
-
+    if (s.attributes['aac'].value == 'VIC_PT042'):
+        parent_aac = s.attributes['parent-aac'].value
+        aac = s.attributes['aac'].value
+        forcastlist = s.getElementsByTagName('forecast-period')
+        for f in forcastlist:
+            icon = '0'
+            elist = f.getElementsByTagName('element')
+            for e in elist:
+                if (e.attributes['type'].value == 'forecast_icon_code'):
+                    icon = e.firstChild.data
+                    print 'ICON: ' + icon
+                if (e.attributes['type'].value == 'precipitation_range'):
+                    precipitation_range = e.firstChild.data
+                    print 'precipitation_range: ' + precipitation_range
+            icon = str(f.attributes['start-time-local'].value)
 
 

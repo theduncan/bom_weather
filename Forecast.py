@@ -41,7 +41,24 @@ def insert_region (db, PID, aac, parent_aac, Local_Start, Local_End, UTC_Start, 
 	    print "Error: " + e
             # Rollback in case there is any error
             db.rollback()
-
+def insert_location (db, PID, aac, parent_aac, Local_Start, Local_End, UTC_Start, UTC_End, icon, min, max, range, precis, pop):
+    cursor = db.cursor()
+    sql_head = """ INSERT INTO `Forecast_location` (`PID`, `aac`, `parent-aac`, `Local_Start`, `Local_End`, `UTC_Start`, `UTC_End`, `Icon`, `Min`, `Max`, `precipitation_range`, `precis`, `probability_of_precipitation`, `DateTime_Modified`) VALUES   """
+    sql_body = "('%s', '%s', '%s', '%s', '%s', '%s', '%s', %d, %d, %d, %s, %s, %s, now())" % (PID, aac, parent_aac, Local_Start, Local_End, UTC_Start, UTC_End, icon, min, max, range, precis, pop)
+    try:
+        # Execute the SQL command
+        sql = sql_head + '' + sql_body
+        print ('SQL: ', sql)
+        cursor.execute(sql )
+        # Commit your changes in the database
+        db.commit()
+    except MySQLdb.IntegrityError as e:
+        if e[0] == 1062:
+	    print 'Dup'
+	else:
+	    print "Error: " + e
+            # Rollback in case there is any error
+            db.rollback()
 
 Fire_Danger = ''
 UV_Alert = ''
@@ -106,3 +123,4 @@ for s in itemlist:
                 if (e.attributes['type'].value == 'probability_of_precipitation'):
                     probability_of_precipitation = e.firstChild.data
                     print 'probability_of_precipitation: ' + probability_of_precipitation  
+            insert_location (db, PID, aac, parent_aac, Local_Start, Local_End, UTC_Start, UTC_End, icon, temp_min, temp_max, precipitation_range, precis, probability_of_precipitation)

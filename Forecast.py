@@ -48,10 +48,7 @@ UV_Alert = ''
 target_url = 'ftp://ftp2.bom.gov.au/anon/gen/fwo/IDV10450.xml'
 data = urllib2.urlopen(target_url) # it's a file like object and works just like a file
 xmldoc = minidom.parse(data)
-amoc = xmldoc.getElementsByTagName('amoc')
-
-ident = amoc.getElementsByTagName('identifier')
-PID = str(ident.firstChild.data)
+PID = 'IDV10450'
 itemlist = xmldoc.getElementsByTagName('area')
 print(len(itemlist))
 print(itemlist[0].attributes['aac'].value)
@@ -79,6 +76,7 @@ for s in itemlist:
         aac = s.attributes['aac'].value
         forcastlist = s.getElementsByTagName('forecast-period')
         for f in forcastlist:
+            precipitation_range = ''
             icon = '0'
             elist = f.getElementsByTagName('element')
             for e in elist:
@@ -88,6 +86,6 @@ for s in itemlist:
                 if (e.attributes['type'].value == 'precipitation_range'):
                     precipitation_range = e.firstChild.data
                     print 'precipitation_range: ' + precipitation_range
-            icon = str(f.attributes['start-time-local'].value)
+
 
 
